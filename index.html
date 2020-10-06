@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // uppgift 1
+      var inl = 26;
+      let upg = "nathalie";
+      const mod = "petersen";
+
+      console.log(inl, upg, mod);
+
+      // uppgift 2
+      let num = 10;
+      let string = "hejsan";
+      let b = false;
+      let car = { type: "volvo" };
+      let fruit = ["apple"];
+
+      console.log(num, string, b, car.type, fruit);
+
+      // uppgift 3
+
+      function summera(arg1, arg2) {
+        return arg1 + arg2;
+      }
+
+      let sum = summera(10, 15);
+
+      console.log("summan blir:" + sum);
+
+      // uppgift 4
+
+      let today = new Date();
+
+      console.log(today);
+
+      // uppgift 5
+      let person = {
+        name: "Nathalie",
+        lastName: "Petersen",
+        age: 26,
+        fullBio: function () {
+          return person.name + " " + person.lastName + " " + person.age;
+        },
+      };
+
+      console.log(person.fullBio());
+
+      //uppgift 6
+
+      let arrayList = [4, 8, 15, 16, 23, 42];
+
+      console.log(arrayList);
+
+      console.log(arrayList[arrayList.length - 1]);
+
+      let numbers = arrayList.filter(lessThan);
+
+      function lessThan(item) {
+        return item < 20;
+      }
+
+      console.log(numbers);
+
+      let map = arrayList.map((x) => x * 2);
+
+      console.log(map);
+
+      arrayList.forEach((nummer) => console.log(nummer));
+
+      // uppgift 7
+
+      let text = " ";
+      let i = 0;
+
+      while (i < 6) {
+        i++;
+
+        if (i <= 3) {
+          text = " loop:" + i;
+        } else {
+          text = " almost done...";
+        }
+
+        console.log(text);
+      }
+      console.log("done");
+    </script>
+  </body>
+</html>
